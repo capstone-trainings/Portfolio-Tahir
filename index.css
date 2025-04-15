@@ -1,5 +1,5 @@
 
-/* Reset + Base styles */
+/* === Reset + Base styles === */
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +11,10 @@ body {
   color: #333;
   background-color: #f3f3f3;
   scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
-/* Animation */
+/* === Animations === */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -27,7 +28,7 @@ body {
   }
 }
 
-/* Header */
+/* === Header === */
 .header {
   background-color: rgb(21, 8, 139);
   color: white;
@@ -39,7 +40,7 @@ body {
   font-size: 3rem;
 }
 
-/* Navigation */
+/* === Navigation === */
 nav {
   background-color: rgb(68, 68, 156);
   padding: 10px 20px;
@@ -51,68 +52,53 @@ nav ul {
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 nav li {
   margin: 0 15px;
 }
 
-nav li a {
-  display: block;
+nav a {
   padding: 14px 20px;
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  text-align: center;
   transition: background-color 0.3s ease;
 }
 
-nav li a:hover {
+nav a:hover {
   background-color: rgb(35, 35, 199);
 }
 
-/* Hero Section */
-.hero {
-  padding: 60px 30px;
-  margin: 130px auto;
-  max-width: 1200px;
-  min-height: 500px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #1e1e94, #4e54c8);
-  color: white;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+/* === Containers === */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.container {
+/* === Hero Section === */
+.hero {
+  margin: 130px auto;
+  background: linear-gradient(135deg, #1e1e94, #4e54c8);
+  border-radius: 20px;
+  color: white;
+  padding: 60px 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 1200px;
+}
+
+.hero .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   gap: 40px;
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.left, .right {
-  flex: 1;
-}
-
-.left {
-  display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.right {
-  text-align: left;
 }
 
 .hero img {
-  width: 100%;
-  max-width: 500px;
+  width: 400px;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   transition: transform 0.4s ease;
@@ -124,37 +110,33 @@ nav li a:hover {
 
 .hero p {
   font-size: 2rem;
-  line-height: 1.6;
   font-weight: 500;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* About Section */
+/* === About Section === */
 .about-section {
   background: linear-gradient(135deg, #4e54c8, #8f94fb);
   color: white;
-  padding: 60px 30px;
-  margin: 130px auto;
-  max-width: 1200px;
+  padding: 60px 20px;
+  margin: 100px auto;
   border-radius: 20px;
+  max-width: 1200px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 .about-section h2 {
   font-size: 2.9rem;
   margin-bottom: 20px;
-  font-weight: 700;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .about-box {
   background-color: rgba(255, 255, 255, 0.08);
-  padding: 35px;
+  padding: 25px;
   border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   font-size: 1.6rem;
-  line-height: 1.7;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .about-box p {
@@ -163,15 +145,12 @@ nav li a:hover {
 
 .about-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
-
-
-/* Projects Section */
+/* === Projects Section === */
 .projects {
   background: linear-gradient(135deg, #e0e7ff, #f0f4ff);
-  padding: 80px 30px;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -179,7 +158,6 @@ nav li a:hover {
   font-size: 2.5rem;
   margin-bottom: 60px;
   color: #1e1e94;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .projects-grid {
@@ -194,15 +172,13 @@ nav li a:hover {
   background: white;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+  transition: 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 .project-card img {
@@ -213,7 +189,6 @@ nav li a:hover {
 
 .card-content {
   padding: 20px;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -221,14 +196,12 @@ nav li a:hover {
 
 .card-content h3 {
   font-size: 1.4rem;
-  margin-bottom: 10px;
   color: #1e1e94;
 }
 
 .card-content p {
   font-size: 1rem;
   color: #555;
-  margin-bottom: 20px;
 }
 
 .project-btn {
@@ -238,14 +211,13 @@ nav li a:hover {
   padding: 10px 18px;
   border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
 }
 
 .project-btn:hover {
   background-color: #1414b8;
 }
 
-/* Contact Section */
+/* === Contact Section === */
 .contact {
   padding: 60px 20px;
   background-color: #f9f9f9;
@@ -260,19 +232,18 @@ nav li a:hover {
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label {
-  text-align: left;
   font-weight: bold;
-  font-size: 1rem;
+  text-align: left;
 }
 
 .contact-form input,
@@ -281,106 +252,57 @@ nav li a:hover {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 100%;
 }
 
 .contact-form button {
+  background: #1414b8;
+  color: white;
   padding: 12px;
   font-size: 1rem;
-  background-color: #1414b8;
-  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #0c0c85;
+  background: #0c0c85;
 }
 
-/* Footer */
+/* === Footer === */
 footer {
-  text-align: center;
-  background-color: rgb(51, 29, 172);
+  background: rgb(51, 29, 172);
   color: white;
   padding: 20px;
-  margin-top: 80px;
+  text-align: center;
 }
 
-/* Responsive Breakpoints */
+/* === Responsive Breakpoints (5) === */
 @media (max-width: 480px) {
-  .header h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero {
-    flex-direction: column;
-    margin: 40px 10px;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .about-box {
-    font-size: 0.9rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
+  .header h1 { font-size: 1.8rem; }
+  .hero p, .about-box { font-size: 1rem; }
+  nav ul { flex-direction: column;
+  padding: 10px; }
+  .hero, .about-section { margin: 40px 10px; }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .header h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero {
-    flex-direction: column;
-    margin: 60px 20px;
-  }
-
-  .hero p {
-    font-size: 1.2rem;
-  }
-
-  .about-box {
-    font-size: 1.4rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
+  .header h1 { font-size: 2.2rem; }
+  .hero p, .about-box { font-size: 1.2rem; }
+  nav ul { flex-direction: column; }
+  .hero, .about-section { margin: 60px 20px; }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .hero {
-    margin: 80px 30px;
-  }
-
-  .hero p {
-    font-size: 1.3rem;
-  }
+  .hero, .about-section { margin: 80px 30px; }
+  .hero p, .about-box { font-size: 1.4rem; }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .hero {
-    margin: 100px;
-  }
-
-  .hero p {
-    font-size: 1.8rem;
-  }
+  .hero, .about-section { margin: 100px auto; }
+  .hero p, .about-box { font-size: 1.6rem; }
 }
 
 @media (min-width: 1441px) {
-  .hero {
-    margin: 130px;
-  }
-
-  .hero p {
-    font-size: 1.7rem;
-  }
+  .hero, .about-section { margin: 130px auto; }
+  .hero p, .about-box { font-size: 1.7rem; }
 }
