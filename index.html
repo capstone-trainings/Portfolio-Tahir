@@ -22,26 +22,27 @@
   </nav>
 
   <section id="home" class="hero fade-in">
-    <img class="img1" src="programming-banner-coding-best-languages-260nw-1078387013.webp" alt="Programming Banner">
-    <p>I a'm Tahir Llokmani,i'm 16 years old i live in Tetovo the city of Macedonia,right now i am going to capstone academy to study html,css and java script</p>
+    <div class="container">
+      <img class="img1" src="programming-banner-coding-best-languages-260nw-1078387013.webp" alt="Programming Banner">
+      <p>
+        Hi, I'm <strong>Tahir Llokmani</strong>.<br>
+        I'm a 16-year-old aspiring web developer based in Tetovo, North Macedonia. Currently, I'm studying HTML, CSS, and JavaScript at Capstone Academy. I'm passionate about creating responsive, user-friendly websites and continuously learning new technologies to improve my skills.
+      </p>
+    </div>
   </section>
-
-  <section id="about"  class="about-section fade-in">
-    <h2>About Me</h2>
-
-    <div class="about-box">
-      <strong>Where I live:</strong>
-      <p>I live in Tetovo in the city of Macedonia,</p>
-    </div>
-
-    <div class="about-box">
-      <strong>Where I go to school:</strong>
-      <p>Capstone Academy, Macedonia — focused on frontend development and building real-world projects using HTML, CSS, and JavaScript.</p>
-    </div>
-
-    <div class="about-box">
-      <strong>My experiences:</strong>
-      <p>Hands-on experience building responsive websites, working with animations, Flexbox, Grid, and modern UI/UX techniques.</p>
+  
+  <!-- About Me Section -->
+  <section id="about" class="about-section fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-box">
+        <p>
+          Hey there! I'm <strong>Tahir Llokmani</strong>, a 16-year-old student from Tetovo, North Macedonia. I'm currently studying frontend development at <strong>Capstone Academy</strong>, where I'm learning to build beautiful and responsive websites using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+        </p>
+        <p>
+          I have hands-on experience with modern tools like Flexbox, Grid, and animations to create interactive user experiences. I'm passionate about web design, constantly learning, and love turning creative ideas into real-world projects.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -49,29 +50,29 @@
     <h2 class="projects-title">My Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <img src="project1.webp" alt="Project 1">
+        <img src="images (1).png" alt="Project 1">
         <div class="card-content">
-          <h3>Cyberpunk Coding Hub</h3>
-          <p>Futuristic workspace with a glowing holographic screen showing HTML & CSS code in a cyberpunk setup.</p>
-          <a href="#" class="project-btn">View Project</a>
+          <h3>W3</h3>
+          <p>W3Schools is a website offering tutorials and references for web development languages like HTML, CSS, and JavaScript. It features interactive examples and a "Try it Yourself" editor for hands-on learning.</p>
+          <a href="https://www.w3schools.com/" class="project-btn">View Project</a>
         </div>
       </div>
   
       <div class="project-card">
-        <img src="project2.webp" alt="Project 2">
+        <img src="images (1).png" alt="Project 2">
         <div class="card-content">
           <h3>Interactive Dev Desk</h3>
-          <p>High-tech desk featuring an interactive display with neon vibes, simulating a modern development environment.</p>
-          <a href="#" class="project-btn">View Project</a>
+          <p>W3Schools is a popular online platform that provides easy-to-follow tutorials on web development, including HTML, CSS, JavaScript, and more. It also offers coding exercises, quizzes, and certifications.</p>
+          <a href="https://www.w3schools.com/" class="project-btn">View Project</a>
         </div>
       </div>
   
       <div class="project-card">
-        <img src="project3.webp" alt="Project 3">
+        <img src="images (1).png" alt="Project 3">
         <div class="card-content">
           <h3>Responsive Studio</h3>
-          <p>Virtual coding studio with responsive layout showcases and CSS animations in action.</p>
-          <a href="#" class="project-btn">View Project</a>
+          <p>W3Schools is a website offering free tutorials and resources for learning web development, from basic HTML to advanced web technologies. It's widely used for self-paced learning and practice.</p>
+          <a href="https://www.w3schools.com/" class="project-btn">View Project</a>
         </div>
       </div>
     </div>
@@ -80,12 +81,13 @@
 
   <section id="contact" class="contact fade-in">
     <h2>Contact Me</h2>
-    <form action="#" method="POST" class="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
 
+    <form action="#" method="POST" class="contact-form">
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
+
+      <label for="name">Subject:</label>
+      <input type="text" id="name" name="name" required>
 
       <label for="message">Message:</label>
       <textarea id="message" name="message" rows="5" required></textarea>
