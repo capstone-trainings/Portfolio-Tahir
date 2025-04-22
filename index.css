@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   color: #333;
@@ -62,11 +66,12 @@ nav a {
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
   background-color: rgb(35, 35, 199);
+  color: #fff;
 }
 
 /* === Containers === */
@@ -99,7 +104,7 @@ nav a:hover {
 
 .hero img {
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   transition: transform 0.4s ease;
@@ -179,7 +184,10 @@ nav a:hover {
 
 .project-card:hover {
   transform: translateY(-6px);
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
 
 .project-card img {
   width: 100%;
@@ -205,16 +213,25 @@ nav a:hover {
 }
 
 .project-btn {
-  align-self: flex-start;
+  display: inline-block;
   background-color: #1e1e94;
   color: white;
-  padding: 10px 18px;
+  padding: 12px 20px;
+  margin: 10px 0;
   border-radius: 8px;
   text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .project-btn:hover {
   background-color: #1414b8;
+  transform: translateY(-2px); /* Adds a subtle lift effect */
+}
+
+.project-btn:active {
+  transform: translateY(0); /* Removes the lift effect on click */
 }
 
 /* === Contact Section === */

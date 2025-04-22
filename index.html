@@ -55,6 +55,7 @@
           <h3>W3</h3>
           <p>W3Schools is a website offering tutorials and references for web development languages like HTML, CSS, and JavaScript. It features interactive examples and a "Try it Yourself" editor for hands-on learning.</p>
           <a href="https://www.w3schools.com/" class="project-btn">View Project</a>
+          <a href="https://github.com/tahir-llokmani" class="project-btn">Github</a>
         </div>
       </div>
   
@@ -64,6 +65,7 @@
           <h3>Interactive Dev Desk</h3>
           <p>W3Schools is a popular online platform that provides easy-to-follow tutorials on web development, including HTML, CSS, JavaScript, and more. It also offers coding exercises, quizzes, and certifications.</p>
           <a href="https://www.w3schools.com/" class="project-btn">View Project</a>
+          <a href="https://github.com/tahir-llokmani" class="project-btn">Github</a>
         </div>
       </div>
   
@@ -73,6 +75,7 @@
           <h3>Responsive Studio</h3>
           <p>W3Schools is a website offering free tutorials and resources for learning web development, from basic HTML to advanced web technologies. It's widely used for self-paced learning and practice.</p>
           <a href="https://www.w3schools.com/" class="project-btn">View Project</a>
+          <a href="https://github.com/tahir-llokmani" class="project-btn">Github</a>
         </div>
       </div>
     </div>
@@ -99,6 +102,22 @@
   <footer>
     <p>Tahir Llokmani &copy; 2025 — All rights reserved.</p>
   </footer>
+
+  <script>
+    document.querySelector(".contact-form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent page refresh
+      const email = document.getElementById("email").value;
+      const subject = document.getElementById("name").value;
+      const message = document.getElementById("message").value;
+  
+      if (email && subject && message) {
+        alert("Thank you, " + email + "! Your message has been sent successfully.");
+        this.reset(); // Clear the form
+      } else {
+        alert("Please fill in all fields before submitting.");
+      }
+    });
+  </script>
 
 </body>
 </html>
